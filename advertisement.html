@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad Pro Advertisement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .advert-container {
+            text-align: center;
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .ipad-image {
+            max-width: 600px;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            background: linear-gradient(90deg, #00f260, #0575e6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subheadline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #b0c4de;
+        }
+
+        .cta-button {
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: white;
+            background: #1a73e8;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(26, 115, 232, 0.4);
+            transition: transform 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(26, 115, 232, 0.6);
+        }
+
+        .abstract-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(45,87,253,1) 100%);
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="advert-container">
+        <h1 class="headline">Experience the Future</h1>
+        <h2 class="subheadline">The All-New iPad Pro</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UjmaxCyJBc4?si=rI6oLQA-LWlo8GJ6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a href="index.html" class="cta-button">Back to Overview</a> <!-- Link back to index.html -->
+    </div>
+    <div class="abstract-bg"></div>
+</body>
+</html>
